@@ -1,11 +1,23 @@
 package Recursion;
 
+import java.util.Scanner;
+
 public class AllIndicesElementOccurence {
 
 	public static void main(String[] args) {
-		int[] arr = { 10, 20, 20, 10, 30, 30, 40 };
+		
+		Scanner sc = new Scanner(System.in) ;
+		
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		
+		for(int i = 0; i< n; i++) {
+			arr[i] = sc.nextInt();
+		}
+		
+		int m = sc.nextInt(); 
 
-		int[] res = allIndices2(arr, 30, 0, 0);
+		int[] res = allIndices2(arr, m, 0, 0);
 
 		for (int val : res) {
 			System.out.print(val + " ");
