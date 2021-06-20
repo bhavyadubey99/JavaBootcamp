@@ -37,10 +37,10 @@ public class formBiggestNumber {
 			while (j < arr.length) {
 
 				String ijs = arr[i] + "" + arr[j];
-				int ij = Integer.parseInt(ijs);
+				long ij = Long.parseLong(ijs);
 
 				String jis = arr[j] + "" + arr[i];
-				int ji = Integer.parseInt(jis);
+				long ji = Long.parseLong(jis);
 
 				if (ij > ji) {
 					j++;
